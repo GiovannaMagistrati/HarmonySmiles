@@ -20,15 +20,25 @@ color: var(--white);
 #numbers a:hover{
   text-shadow: 0px 0px 20px var(--gold);
 }
+.list-footer a{
+  padding: 15px 20px;
+  box-shadow: -3px 0px 10px var(--light-gray);
+  border-radius: 30px;
+  margin: 0px 5px 15px ;
+}
+.list-footer a:hover{
+  text-shadow: 0px 0px 10px var(--gold);
 
+}
 footer{
   width: 100vw;
 }
 .copyright{
   background-color: #011627;
   height: 7vh;
+  width: 100vw;
 }
-/* From Uiverse.io by ashish-yadv */ 
+/* From Uiverse.io github icon */ 
 .btn-io {
   background-color: transparent;
   place-items: center;
@@ -51,7 +61,7 @@ footer{
 .boudi, .giovy{
   color: transparent;
 }
-/* From Uiverse.io by misaraadel */ 
+/* From Uiverse.io social media */ 
 .socail-media {
   display: flex;
   align-items: center;
@@ -72,7 +82,7 @@ footer{
   justify-content: center;
   position: relative;
   z-index: 9;
-  left: 6vw;
+  top: 3vh;
 }
 
 .socail-media li a svg {
