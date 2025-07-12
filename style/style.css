@@ -1,0 +1,136 @@
+:root {
+  --white: #fcfcfc;
+
+  --light-gray: #d7e6ea;
+
+  --blue: #10334f;
+
+  --gray: #c2c2c1;
+
+  --gold: #ecd2ac;
+}
+.col{
+  background-color:var(--blue);
+  color: var(--white);
+}
+#numbers a{
+text-decoration: none;
+color: var(--white);
+}
+#numbers a:hover{
+  text-shadow: 0px 0px 20px var(--gold);
+}
+
+footer{
+  width: 100vw;
+}
+.copyright{
+  background-color: #011627;
+  height: 7vh;
+}
+/* From Uiverse.io by ashish-yadv */ 
+.btn-io {
+  background-color: transparent;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.4s;
+  border: none;
+  padding: 0;
+}
+
+
+
+.btn-io svg {
+  transition: transform 0.4s;
+}
+
+.btn-io:hover svg {
+  transform:rotate(360deg);
+  fill: #333333;
+}
+.boudi, .giovy{
+  color: transparent;
+}
+/* From Uiverse.io by misaraadel */ 
+.socail-media {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.socail-media li a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+  left: 6vw;
+}
+
+.socail-media li a svg {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  filter: invert(100%) sepia(0%) saturate(7455%) hue-rotate(57deg) brightness(108%) contrast(105%);
+}
+
+.socail-media li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+  background-color: #fff;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.socail-media li a:hover::after {
+  animation: sideClip 0.2s linear;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 1;
+}
+
+.socail-media li a:hover svg {
+  animation: fadeInLeft 0.2s linear both;
+  filter: var(--gold);;
+}
+
+@keyframes sideClip {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
+  }
+
+  50% {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
