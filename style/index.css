@@ -43,6 +43,14 @@ h1 {
     font-size: 100px;
 }
 
+.divIcono {
+    color: var(--blue);
+}
+
+.divIcono:hover {
+    color: var(--gold);
+}
+
 /* CARDS */
 #cardsSection {
     margin-top: 2.5em;
@@ -52,7 +60,10 @@ h1 {
 
 .homeCard {
     border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.465);
+}
+
+.homeCard:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.24);
 }
 
 .homeCard img {
