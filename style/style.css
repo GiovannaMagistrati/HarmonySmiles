@@ -9,7 +9,7 @@
 
   --gold: #ecd2ac;
 }
-
+/* <!--Nav-bar & off-canvas style -->  */
 .logo {
   margin-left: 10px;
   width: 100px;
@@ -33,12 +33,12 @@
 #in-sh:focus {
   box-shadow: 0px 0px 10px var(--gray);
 }
-li {
+.list-bg {
   margin: 10px;
   padding: 5px 15px;
   border-radius: 30px;
 }
-li:hover {
+.list-bg:hover {
   background-color: var(--gold);
   box-shadow: 0px 0px 20px var(--gold);
 }
