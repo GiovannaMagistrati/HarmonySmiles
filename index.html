@@ -1,31 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Link Css -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/index.css">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <header></header>
+    <!-- HEADER -->
+    <header>
+        <!-- Nav-bar -->
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="../images/logoclinicadental.png" alt="logo"
+                        loading="lazy"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                    aria-controls="offcanvasMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav fs-5  m-auto mb-lg-0">
+                        <li class="nav-item list-bg">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item list-bg">
+                            <a class="nav-link" href="#">Before & After</a>
+                        </li>
+                        <li class="nav-item dropdown list-bg">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu fs-5" id="dd">
+                                <li class="list-bg"><a class="dropdown-item" id="dd-bg-c" href="./page/cleaningsection.html">Dental Cleaning</a>
+                                </li>
+                                <li class="list-bg"><a class="dropdown-item" id="dd-bg-c" href="./page/orthodonticsection.html">Orthodontics</a></li>
+                                <li class="list-bg">
+                                    <a class="dropdown-item" id="dd-bg-c" href="./page/implantsection.html">Dental Implants</a>
+                                </li>
+                                <li class="list-bg"><a class="dropdown-item" id="dd-bg-c" href="./page/whiteningsection.html">Teeth Whitening</a>
+                                </li>
+                                <li class="list-bg"><a class="dropdown-item" id="dd-bg-c" href="./page/familysection.html">Family & pediatric
+                                        care</a></li>
+                                <li class="list-bg">
+                                    <a class="dropdown-item" id="dd-bg-c" href="#">Veneers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item list-bg">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item list-bg">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" id="in-sh" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <button class="btn" id="btn-sh" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Side-bar-Off-Canvas -->
+        <div class="offcanvas offcanvas-end bg-light" id="offcanvasMenu" tabindex="-1"
+            aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel"> <a class="navbar-brand" href="#"><img class="logo"
+                            src="../images/logoclinicadental.png" alt="logo" loading="lazy"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-column fs-5 align-items-center">
+                    <li class="nav-item list-bg">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item list-bg">
+                        <a class="nav-link" href="#">Before & After</a>
+                    </li>
+                    <li class="nav-item dropdown list-bg">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" id="dd">
+                            <li class="list-bg"><a class="dropdown-item" id="dd-bg-c" href="#">Dental Cleaning</a></li>
+                            <li class="list-bg"><a class="dropdown-item" id="dd-bg-c" href="#">Orthodontics</a></li>
+                            <li class="list-bg">
+                                <a class="dropdown-item" id="dd-bg-c" href="#">Dental Implants</a>
+                            </li>
+                            <li class="list-bg"><a class="dropdown-item" id="dd-bg-c" href="#">Teeth Whitening</a></li>
+                            <li class="list-bg"><a class="dropdown-item" id="dd-bg-c" href="#">Family & pediatric
+                                    care</a></li>
+                            <li class="list-bg">
+                                <a class="dropdown-item" id="dd-bg-c" href="#">Veneers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item list-bg">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item list-bg">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex flex-column align-items-center" role="search">
+                    <input class="form-control m-auto" id="in-sh" type="search" placeholder="Search"
+                        aria-label="Search" />
+                    <button class="btn btn-sh-off-canvas mt-4" id="btn-sh" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
     <main>
-        <section>
-            <img src="./assets/img/family-3400033_1280.jpg" alt="Family">
-            <h4>Creating healthy smiles in a space that feels like home</h4>
-            <a href="#">Book an appointment</a>
+        <section id="heroSection">
+            <h4 class="text-white">Creating healthy smiles in a space that feels like home</h4>
+            <a class="text-decoration-none text-white" href="#">Book an appointment</a>
         </section>
-        <section>
-            <h1>Welcome to Harmony Smiles</h1>
-            <p>At Harmony Smiles, we provide patient-centered dental care in a calm and welcoming environment.</p> 
-            <p>Our team is dedicated to improving your health, comfort, and confidence — one smile at a time.</p>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16"><path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/></svg>WHO WE ARE</a>
-            <a href="#"><i class="fas fa-tooth"></i> SERVICES</a>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16"><path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/><path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z"/></svg></i>BEFORE & AFTER</a>
-            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-text-fill" viewBox="0 0 16 16"><path d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/></svg>CONTACT US</a>
+        <!-- WELCOME -->
+        <section id="welcomeSection" class="m-5">
+            <div id="welcome">
+                <h1>Welcome to Harmony Smiles</h1>
+                <p>At Harmony Smiles, we provide patient-centered dental care in a calm and welcoming environment.</p>
+                <p>Our team is dedicated to improving your health, comfort, and confidence — one smile at a time.</p>
+            </div>
+            <!-- ICONS -->
+            <div id="iconos" class="d-flex justify-content-center">
+                <a href="#" class="text-decoration-none text-center mx-2">
+                    <div class="divIcono d-flex flex-column align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            <path
+                                d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z" />
+                        </svg>
+                        <p>WHO WE ARE</p>
+                    </div>
+                </a>
+                <a href="#services" class="text-decoration-none text-center mx-2">
+                    <div class="divIcono d-flex flex-column align-items-center gap-3">
+                        <i class="bi fas fa-tooth"></i>
+                        <p>SERVICES</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-center mx-3">
+                    <div class="divIcono d-flex flex-column align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-image" viewBox="0 0 16 16">
+                            <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+                            <path
+                                d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1z" />
+                        </svg></i>
+                        <p>BEFORE & AFTER</p>
+                    </div>
+                </a>
+                <a href="#" class="text-decoration-none text-center mx-3">
+                    <div class="divIcono d-flex flex-column align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-chat-text-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8c0 3.866-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7M4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                        </svg>
+                        <p>CONTACT US</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- CARDS -->
+        <section id="cardsSection" class="d-flex flex-wrap justify-content-around">
+            <a href="#" class="text-decoration-none">
+                <div class="homeCard card mt-2" style="width: 25rem;">
+                    <img src="./assets/img/dentist-5428007_1280.jpg" class="card-img-top" alt="Clinic">
+                    <div class="card-body text-center">
+                        <h6>Everything you need to know before your first visit</h6>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="text-decoration-none">
+                <div class="homeCard card mt-2" style="width: 25rem;">
+                    <img src="./assets/img/teeth-2339168_1280.jpg" class="card-img-top" alt="Smile">
+                    <div class="card-body text-center">
+                        <h6>Real patient results that speak for themselves</h6>
+                        <br>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="text-decoration-none">
+                <div class="homeCard card mt-2" style="width: 25rem;">
+                    <img src="./assets/img/workplace-5517762_1280.jpg" class="card-img-top" alt="Reception">
+                    <div class="card-body text-center">
+                        <h6>Get in touch, find us, or book an appointment today</h6>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!-- SERVICE -->
+        <section id="services" class="serviceSection d-flex align-items-start justify-content-center gap-5 mt-4 flex-wrap position-relative">
+            <!-- BACKGROUND -->
+            <div class="services-image">
+                <img src="./assets/img/adult-3264740_1280.jpg" alt="Smiling patient">
+            </div>
+            <div class="services-content">
+                <h2 class="mt-3">Our Most Requested Services</h2>
+                <ul class="service-list list-unstyled">
+                    <li class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg>Dental Cleaning</li>
+                    <li class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg>Teeth Whitening</li>
+                    <li class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg>Dental Implants</li>
+                    <li class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg>Orthodontics</li>
+                    <li class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg>Veneers</li>
+                    <li class="d-flex align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"
+                            fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                            <path
+                                d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                        </svg>Family & Pediatric Care</li>
+                </ul>
+            </div>
+        </section>
+        <!-- TESTIMONIAL -->
+        <section class="testimonial-section py-5">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <h2 class="fw-bold">What Our Patients Say</h2>
+                    <p class="text-muted">Real experiences from real smiles</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Testimoni 1 -->
+                    <div class="col-md-4 text-center">
+                        <img src="./assets/img/girl-1869532_1280.jpg" alt="Maria G."
+                            class="img-fluid rounded-circle shadow mb-3"
+                            style="width: 150px; height: 150px; object-fit: cover;">
+                        <blockquote class="blockquote">
+                            <p class="fs-6 fst-italic text-muted">
+                                “They truly care. The clinic is beautiful and the experience was smooth from start to
+                                finish.”
+                            </p>
+                            <footer class="blockquote-footer">Maria G.</footer>
+                        </blockquote>
+                    </div>
+                    <!-- Testimoni 2 -->
+                    <div class="col-md-4 text-center">
+                        <img src="https://cdn.pixabay.com/photo/2024/02/11/05/38/men-8565962_1280.jpg" alt="David L."
+                            class="img-fluid rounded-circle shadow mb-3"
+                            style="width: 150px; height: 150px; object-fit: cover;">
+                        <blockquote class="blockquote">
+                            <p class="fs-6 fst-italic text-muted">
+                                “I was nervous at first, but they made me feel so comfortable. I’m genuinely happy with
+                                my smile now.”
+                            </p>
+                            <footer class="blockquote-footer">David L.</footer>
+                        </blockquote>
+                    </div>
+                    <!-- Testimoni 3 -->
+                    <div class="col-md-4 text-center">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/06/15/13/woman-2593366_1280.jpg" alt="Emily R."
+                            class="img-fluid rounded-circle shadow mb-3"
+                            style="width: 150px; height: 150px; object-fit: cover;">
+                        <blockquote class="blockquote">
+                            <p class="fs-6 fst-italic text-muted">
+                                “Professional, gentle, and kind. They exceeded all my expectations.”
+                            </p>
+                            <footer class="blockquote-footer">Emily R.</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer></footer>
+    <!-- From Uiverse.io by NelsonDJCR/ WHATSAPP -->
+    <button class="button2">
+        WhatsApp
+        <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"
+                fill="#fff"></path>
+            <path
+                d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"
+                fill="#fff"></path>
+            <path
+                d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"
+                fill="#cfd8dc"></path>
+            <path
+                d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
+                fill="#40c351"></path>
+            <path clip-rule="evenodd"
+                d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                fill-rule="evenodd" fill="#fff"></path>
+        </svg>
+    </button>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
