@@ -1,0 +1,72 @@
+:root {
+  --white: #fcfcfc;
+
+  --light-gray: #d7e6ea;
+
+  --blue: #10334f;
+
+  --gray: #c2c2c1;
+
+  --gold: #ecd2ac;
+}
+/* carousel */
+.carousel {
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px var(--gray);
+  overflow: hidden;
+}
+#carouselExampleAutoplaying, #carouselExampleAutoplaying2, #carouselExampleAutoplaying3, #carouselExampleAutoplaying4, #carouselExampleAutoplaying5{
+margin: 30px 30px 150px ;
+}
+button span{
+  background-color: black;
+  border-radius: 5px;
+}
+.p-1{
+  max-width: 800px;
+  margin: 50px auto;
+}
+p{
+  font-size: 1.5rem;
+  
+}
+/* Reviews */
+.card{
+  background-color: var(--blue);
+  align-items: center;
+  text-align: center;
+  margin: 50px 5px;
+}
+.card-group img{
+  margin-top: 10px;
+  width: 50%;
+  box-shadow: 1px 1px 10px var(--blue);
+}
+.reviews-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 0 50px 0; 
+ padding: 20px 0;
+  text-align: center;
+  background-color: var(--gold);
+  box-shadow:1px 0px 30px var(--gray);
+}
+.card-title::after{
+  content: "★★★★★";
+  font-size: 2.5rem;
+  color: yellow;
+  display: block;
+}
+.card-text{
+  font-size: 1rem;
+}
+@media (max-width:992px) {
+  p{
+  font-size: 0.8rem; 
+}
+div h2{
+  font-size: 1rem;
+}
+
+}
