@@ -18,7 +18,7 @@
 #carouselExampleAutoplaying, #carouselExampleAutoplaying2, #carouselExampleAutoplaying3, #carouselExampleAutoplaying4, #carouselExampleAutoplaying5{
 margin: 30px 30px 150px ;
 }
-button span{
+.carousel-control-prev span, .carousel-control-next span {
   background-color: black;
   border-radius: 5px;
 }
@@ -32,7 +32,6 @@ p{
 }
 /* Reviews */
 .card{
-  background-color: var(--blue);
   align-items: center;
   text-align: center;
   margin: 50px 5px;
