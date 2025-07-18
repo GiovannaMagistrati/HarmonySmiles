@@ -1,0 +1,7 @@
+#benefits {
+    margin-top: 50px;
+}
+
+.veneersIcons, .veneersIcons p {
+    color: var(--gray);
+}

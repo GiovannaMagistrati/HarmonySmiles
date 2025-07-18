@@ -9,7 +9,7 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- Link Css -->
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/implantsection.css">
+    <link rel="stylesheet" href="../style/contcatus.css">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -133,72 +133,76 @@
     </header>
     <!-- MAIN -->
     <main>
-        <!-- DENTAL IMPLANTS SECTION -->
-        <section class="py-5 bg-white">
+        <!-- CONTACT US SECTION -->
+        <section class="py-5">
             <div class="container">
-                <!-- Title and subtitle -->
+                <!-- Title and introduction -->
                 <div class="text-center mb-5">
-                    <h2 class="fw-bold">Dental Implants</h2>
-                    <p class="text-muted fs-5">Restore your smile with strength and confidence.</p>
-                    <p class="text-muted">A natural-looking, lasting solution for missing teeth.</p>
+                    <h2 class="fw-bold">Contact Us</h2>
+                    <p class="text-muted fs-5">Have questions or want to book an appointment? We’re here to help!</p>
                 </div>
-                <!-- Imagen destacada + descripción -->
-                <div class="row align-items-center mb-5">
-                    <div class="col-md-6 text-center mb-4 mb-md-0">
-                        <figure>
-                            <img src="https://www.venemandentalcare.com/wp-content/uploads/2020/01/dental-implants-patient-smiling.jpg"
-                                alt="Patient smiling with a dental implant restoration at Harmony Smiles."
-                                class="img-fluid rounded shadow">
-                            <figcaption class="mt-2 text-muted small">A confident smile restored—natural, functional,
-                                and lasting.
-                            </figcaption>
-                        </figure>
-                    </div>
+                <div class="row g-5">
+                    <!-- Contcat formulary -->
                     <div class="col-md-6">
-                        <p>
-                            At <strong>Harmony Smiles</strong>, our dental implants are a permanent solution for missing
-                            teeth —
-                            designed to look, feel, and function like natural ones.
-                        </p>
-                        <p>
-                            We use advanced digital planning and surgical precision to place each implant securely in
-                            your jaw. Once
-                            healed, a custom-made crown is attached, completing your restoration with strength and
-                            elegance.
-                        </p>
-                        <ul class="fw-semibold">
-                            <li>Replace one or multiple teeth</li>
-                            <li>Improve chewing and speech</li>
-                            <li>Prevent bone loss and preserve facial structure</li>
-                        </ul>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control required" id="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control required" id="email" placeholder="your@email.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone (optional)</label>
+                                <input type="tel" class="form-control required" id="phone" placeholder="+1 555 123 4567">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="How can we help you?"
+                                    required></textarea>
+                            </div> 
+                            <div class="text-end">                           
+                                <a id="mensaje" class="btn" href="../page/404error.html">Send Message</a>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <!-- Images -->
-                <div class="row text-center">
-                    <div class="col-md-6 mb-4">
-                        <figure>
-                            <img src="https://www.cottonwooddentalutah.com/wp-content/uploads/2024/10/Dental-Implants.jpg"
-                                alt="Close-up of dental implant post in gum, demonstrating precise placement and integration."
-                                class="imgImplant img-fluid rounded shadow">
-                            <figcaption class="mt-2 text-muted small">Precision placement for a strong foundation and
-                                natural feel.
-                            </figcaption>
-                        </figure>
+                    <!-- Contact info + maps -->
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <h5 class="fw-semibold"><i class="iconoContact fas fa-map-marker-alt me-2"></i> Address</h5>
+                            <p class="text-muted">Avenida Aconquija 226, Yerba Buena, Tucumán, Argentina</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-semibold"><i class="iconoContact fas fa-phone me-2"></i> Phone / WhatsApp</h5>
+                            <p class="text-muted">+20 1052040220</p>
+                            <p class="text-muted">+20 1052040230</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-semibold"><i class="iconoContact fas fa-envelope me-2"></i> Email</h5>
+                            <p class="text-muted">hello@harmonysmiles.com</p>
+                        </div>
+                        <div class="mb-4">
+                            <h5 class="fw-semibold"><i class="iconoContact fas fa-clock me-2"></i> Clinic Hours</h5>
+                            <p class="text-muted">
+                                Mon-Fri: 9:00 AM - 6:00 PM<br>
+                                Sat: 9:00 AM - 1:00 PM<br>
+                                Sun: Closed
+                            </p>
+                        </div>
+                        <!-- Maps -->
+                        <div class="ratio ratio-16x9 rounded shadow">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.058125576352!2d-65.27007472503296!3d-26.817972776703705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cdbf0313fbf%3A0xcb846d3f1a887b6e!2sAv.%20Aconquija%20226%2C%20T4107CDP%20Yerba%20Buena%2C%20Tucum%C3%A1n%2C%20Argentina!5e1!3m2!1sen!2seg!4v1752405861315!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <figure>
-                            <img src="https://www.heartlandoralsurgeryanddentalimplants.com/wp-content/uploads/2024/06/Young-woman-with-beautiful-smile-and-dentist-holding-educational-model-of-dental-implant-on-blue-background-closeup.jpg"
-                                alt="An anatomical model showing the implant post, abutment, and crown used in dental implants."
-                                class="imgImplant img-fluid rounded shadow">
-                            <figcaption class="mt-2 text-muted small">The three-part structure of a dental implant:
-                                post, abutment,
-                                and custom crown.</figcaption>
-                        </figure>
-                    </div>
+
                 </div>
             </div>
         </section>
+
     </main>
+    <!-- FOOTER -->
     <footer>
         <div class=" d-flex  flex-column">
             <div class="container-fluid text-center mt-auto">
@@ -323,8 +327,8 @@
                     </div>
                     <!--call us-->
                     <div class="col">
-                        <a href="../index.html"><img class="logo-footer" src="../assets/img/logoclinicadental.png"
-                                alt="logo" width=200px></a>
+                        <a href="../index.html"><img class="logo-footer" src="../assets/img/logoclinicadental.png" alt="logo"
+                                width=200px></a>
                     </div>
                     <div class="col pb-5 fs-3">
                         Call Us
@@ -387,3 +391,5 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </body>
+
+</html>
