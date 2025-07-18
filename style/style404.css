@@ -1,0 +1,37 @@
+:root {
+  --white: #fcfcfc;
+
+  --light-gray: #d7e6ea;
+
+  --blue: #10334f;
+
+  --gray: #c2c2c1;
+
+  --gold: #ecd2ac;
+}
+
+main {
+    background-image: url(../assets/img/ChatGPT\ Image\ Jul\ 16\,\ 2025\,\ 05_07_51\ PM.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.home-btn {
+  position: absolute;
+  left: 5%;
+  bottom: -11%;
+  padding: 15px 50px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 2rem;
+  background-color: var(--gold);
+  text-decoration: none;
+  color: black;
+}
+.home-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px var(--gold);
+}
